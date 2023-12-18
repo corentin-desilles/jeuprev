@@ -34,6 +34,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Les publicités de jeu',
         text: "Vous remarquez une augmentation des publicités pour les jeux d'argent sur les réseaux sociaux",
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -49,6 +50,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Un ami pari régulièrement',
         text: 'Votre ami vous parle de ses paris fréquents. Il sembe très excité, mais celà vous inquiète.',
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -64,6 +66,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Les jeux de hasard en ligne',
         text: "Vous découvrez une variété de jeux d'argent et de hasard disponible en ligne",
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -79,6 +82,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Les préjugés sur les joueurs',
         text: "Vous entendez un commentaire négatif sur les joueurs : 'Seuls les idiots pensent pouvoir gagner aux jeux !'",
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -94,6 +98,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Paris sportif entre amis',
         text: "Vous êtes invité(e) à parier de l'argent sur le résultat d'un match sportif entre amis.",
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -109,6 +114,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Quel jeu vidéo ?',
         text: 'Vous hésitez entre deux jeux vidéos, un jeu compet à acheter et un jeu gratuit qui conient des petits paiements pour avancer plus vite',
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
