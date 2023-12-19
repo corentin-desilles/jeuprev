@@ -2,10 +2,11 @@ import { OrbitControls } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { useLoader } from '@react-three/fiber' //hook that abstract loading
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader' //send the Three.js loader class we want to use and the path to the file to useLoader
+import React from 'react'
 
-export default function Experience() {
-    const model = useLoader(GLTFLoader, './hamburger.glb')
-    console.log(model)
+export default function Experience({ model }) {
+    const modelData = useLoader(GLTFLoader, `/${model}.glb`)
+    console.log(modelData)
 
     return (
         <>
@@ -26,7 +27,7 @@ export default function Experience() {
                 <meshStandardMaterial color="greenyellow" />
             </mesh>
 
-            <primitive object={model.scene} />
+            <primitive object={modelData.scene} />
         </>
     )
 }
