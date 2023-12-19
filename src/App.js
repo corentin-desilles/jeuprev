@@ -78,7 +78,7 @@ function App() {
                                 fov: 45,
                                 near: 0.1,
                                 far: 200,
-                                position: [-4, 3, 6],
+                                position: [1, 4, 10],
                             }}
                         >
                             <Experience model={currentCard.model} />
