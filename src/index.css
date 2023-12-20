@@ -1,7 +1,8 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: ivory;
 }
 
 body {
@@ -13,9 +14,9 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
-} */
+}
 
-html,
+/* html,
 body,
 #root {
     position: fixed;
@@ -24,4 +25,4 @@ body,
     width: 100%;
     height: 100%;
     background: ivory;
-}
+} */

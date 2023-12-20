@@ -71,29 +71,37 @@ function App() {
                     <h2>{currentCard.title}</h2>
                     <p>{currentCard.text}</p>
 
-                    <div className={`${styles.modelScene}`}>
-                        <Canvas
-                            shadows
-                            camera={{
-                                fov: 45,
-                                near: 0.1,
-                                far: 200,
-                                position: [1, 4, 10],
-                            }}
-                        >
-                            <Experience model={currentCard.model} />
-                        </Canvas>
-                    </div>
-
                     <div className={`${styles.buttonContainer}`}>
-                        {currentCard.choices.map(choice => (
-                            <button
-                                key={choice.id}
-                                onClick={() => handleChoiceClick(choice.text)}
+                        <button
+                            className={`${styles.buttonLeft}`}
+                            onClick={() =>
+                                handleChoiceClick(currentCard.choices[0].text)
+                            }
+                        >
+                            {currentCard.choices[0].text}
+                        </button>
+
+                        <div className={`${styles.modelScene}`}>
+                            <Canvas
+                                shadows
+                                camera={{
+                                    fov: 45,
+                                    near: 0.1,
+                                    far: 200,
+                                    position: [1, 4, 10],
+                                }}
                             >
-                                {choice.text}
-                            </button>
-                        ))}
+                                <Experience model={currentCard.model} />
+                            </Canvas>
+                        </div>
+                        <button
+                            className={`${styles.buttonRight}`}
+                            onClick={() =>
+                                handleChoiceClick(currentCard.choices[1].text)
+                            }
+                        >
+                            {currentCard.choices[1].text}
+                        </button>
                     </div>
                 </div>
             ) : (
