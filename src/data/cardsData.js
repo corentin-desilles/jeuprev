@@ -50,7 +50,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Un ami pari régulièrement',
         text: 'Votre ami vous parle de ses paris fréquents. Il sembe très excité, mais celà vous inquiète.',
-        model: 'hamburger',
+        model: 'dice',
         choices: [
             {
                 id: generateUniqueId(),
@@ -66,7 +66,7 @@ const cardsData = [
         id: generateUniqueId(),
         title: 'Les jeux de hasard en ligne',
         text: "Vous découvrez une variété de jeux d'argent et de hasard disponible en ligne",
-        model: 'hamburger',
+        model: 'foot',
         choices: [
             {
                 id: generateUniqueId(),
