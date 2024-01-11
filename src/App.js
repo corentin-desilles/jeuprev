@@ -68,19 +68,32 @@ function App() {
         <div className={`${styles.app}`}>
             {currentCardIndex < cardsData.length ? (
                 <div className={`${styles.game}`}>
-                    <h2>{currentCard.title}</h2>
-                    <p>{currentCard.text}</p>
+                    <div className={`${styles.buttonAndSceneContainer}`}>
+                        <div className={`${styles.buttonContainer}`}>
+                            <h2>{currentCard.title}</h2>
+                            <p>{currentCard.text}</p>
+                            <button
+                                className={`${styles.buttonLeft}`}
+                                onClick={() =>
+                                    handleChoiceClick(
+                                        currentCard.choices[0].text
+                                    )
+                                }
+                            >
+                                {currentCard.choices[0].text}
+                            </button>
 
-                    <div className={`${styles.buttonContainer}`}>
-                        <button
-                            className={`${styles.buttonLeft}`}
-                            onClick={() =>
-                                handleChoiceClick(currentCard.choices[0].text)
-                            }
-                        >
-                            {currentCard.choices[0].text}
-                        </button>
-
+                            <button
+                                className={`${styles.buttonRight}`}
+                                onClick={() =>
+                                    handleChoiceClick(
+                                        currentCard.choices[1].text
+                                    )
+                                }
+                            >
+                                {currentCard.choices[1].text}
+                            </button>
+                        </div>
                         <div className={`${styles.modelScene}`}>
                             <Canvas
                                 shadows
@@ -94,14 +107,6 @@ function App() {
                                 <Experience model={currentCard.model} />
                             </Canvas>
                         </div>
-                        <button
-                            className={`${styles.buttonRight}`}
-                            onClick={() =>
-                                handleChoiceClick(currentCard.choices[1].text)
-                            }
-                        >
-                            {currentCard.choices[1].text}
-                        </button>
                     </div>
                 </div>
             ) : (

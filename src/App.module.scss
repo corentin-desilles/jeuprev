@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .game {
@@ -13,25 +14,77 @@
     justify-content: center;
 }
 
-.buttonContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+h2 {
+    margin-bottom: 20px;
+    font-family: 'noto-sans';
+    font-size: 24px;
+    background: none;
+    color: rgb(245, 245, 220);
 }
 
+p {
+    margin-bottom: 80px;
+    font-family: 'noto-sans';
+    font-size: 18px;
+    text-align: center;
+    background: none;
+    color: beige;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 400px;
+    padding: 32px 16px;
+    background-image: url(https://cdn.cssauthor.com/wp-content/uploads/2015/09/Free-Seamless-Wood-Textures.jpg?strip=all&lossy=1&ssl=1);
+    border-radius: 15px;
+}
+
+.buttonAndSceneContainer {
+    display: flex;
+}
+
+//  {
+//     padding: 10px 12px 10px 12px;
+//     width: 400px;
+//     background-color: rgb(248, 171, 184);
+//     color: #fff;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     margin-top: 20px;
+//     font-family: 'noto-sans';
+//     font-size: 18px;
+// }
 .buttonLeft,
 .buttonRight {
-    padding: 8px;
-    width: 200px;
-    background-color: rgb(248, 171, 184);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 0.2em gray;
     cursor: pointer;
+    font-size: 18px;
+}
+.buttonLeft:active,
+.buttonRight:active {
+    box-shadow: none;
+    position: relative;
+    top: 0.2em;
 }
 
 .modelScene {
-    border: solid red 1px;
-    width: 560px;
+    width: 720px;
     height: 400px;
 }
